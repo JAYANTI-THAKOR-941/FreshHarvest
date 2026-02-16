@@ -1,0 +1,23 @@
+.hero{
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,.2),rgba(36, 37, 36, 0.2)),url('https://img.freepik.com/free-photo/top-view-colourful-veggies-white-background-with-copy-space_23-2148290756.jpg?t=st=1771221847~exp=1771225447~hmac=ad797271a1ea5e47547f18dd23223f275b11cad6b29549a7faf87f49db81dc41') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-content{
+    padding: 12% 10%;
+}
+.hero-content h1{
+    font-size: 45px;
+}
+.hero-content p{
+    margin: 14px 0;
+}
+.hero-content button{
+    background-color: rgb(45, 155, 45);
+    color: white;
+    padding: 12px 26px;
+    cursor: pointer;
+    border: 0;
+    font-size: 19px;
+}

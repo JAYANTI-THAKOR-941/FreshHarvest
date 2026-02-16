@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+}
+.logo h1 span{
+    color: rgb(45, 155, 45);
+}
+.nav-links a{
+    margin: 0 20px;
+}
+.btn-group button{
+    padding: 10px 26px;
+    background-color:rgb(45, 155, 45); 
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
