@@ -6,6 +6,14 @@ const Header = () => {
 
   const navigate = useNavigate();
 
+  let user = localStorage.getItem('user');
+
+  const onLogout = ()=>{
+    localStorage.removeItem('user');
+    window.location.reload();
+    alert("Logout successfully.!!")
+  }
+
   return (
     <div className='header'>
       <div className="logo">
@@ -19,7 +27,13 @@ const Header = () => {
         <Link to='/contact'>Contact</Link>
       </div>
       <div className="btn-group">
-        <button onClick={()=>navigate('/login')}>Login</button>
+        {
+          user?<>
+            <button className='user-icon'>{user.charAt(0)}</button>
+            <button onClick={onLogout}>Logout</button>
+          </>:
+          <button onClick={()=>navigate('/login')}>Login</button>
+        }
       </div>
     </div>
   )
